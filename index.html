@@ -5,67 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keep it Clean - Sydney</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-blue-900 text-white">
     <!-- Header -->
-    <header class="bg-blue-800 text-white shadow-md">
+    <header class="bg-blue-800 shadow-md">
         <div class="container mx-auto px-4 py-5 flex justify-between items-center">
             <div>
                 <h1 class="text-2xl font-bold">Keep it Clean - Sydney</h1>
             </div>
             <nav>
                 <ul class="flex space-x-4">
-                    <li><a href="#services" class="hover:text-gray-200">Services</a></li>
-                    <li><a href="#about" class="hover:text-gray-200">About Us</a></li>
-                    <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+                    <li><a href="#services" class="text-white hover:text-gray-300">Services</a></li>
+                    <li><a href="#about" class="text-white hover:text-gray-300">About Us</a></li>
+                    <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-blue-900 text-white py-20">
-        <div class="container mx-auto px-4 text-center">
+    <section class="py-20 text-center">
+        <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold mb-4">Clean Spaces, Comfortable Homes</h2>
             <p class="text-xl mb-8">Professional Cleaning Services Tailored to Your Needs.</p>
-            <a href="#services" class="bg-white text-blue-800 px-6 py-3 rounded-full hover:bg-gray-100 transition duration-300">Explore Our Services</a>
+            <a href="#services" class="bg-white text-blue-800 px-6 py-3 rounded-full hover:bg-blue-100 transition duration-300">Explore Our Services</a>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-16 bg-white">
+    <section id="services" class="py-16 bg-blue-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-200 rounded-lg p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 text-black">
                     <h3 class="text-2xl font-bold mb-2">Maintenance Clean</h3>
                     <p class="text-gray-700">Regular cleaning to keep your space fresh and tidy.</p>
                 </div>
-                <div class="bg-gray-200 rounded-lg p-6">
+                <div class="bg-white rounded-lg p-6 text-black">
                     <h3 class="text-2xl font-bold mb-2">Deep Clean</h3>
                     <p class="text-gray-700">A thorough cleaning to tackle even the toughest messes.</p>
                 </div>
-                <div class="bg-gray-200 rounded-lg p-6">
+                <div class="bg-white rounded-lg p-6 text-black">
                     <h3 class="text-2xl font-bold mb-2">One-off Overhaul</h3>
                     <p class="text-gray-700">A comprehensive clean for special occasions or when you need a fresh start.</p>
                 </div>
-                <div class="bg-gray-200 rounded-lg p-6">
+                <div class="bg-white rounded-lg p-6 text-black">
                     <h3 class="text-2xl font-bold mb-2">Declutter & Tidy</h3>
                     <p class="text-gray-700">Helping you organize and declutter your space.</p>
                 </div>
-                <div class="bg-gray-200 rounded-lg p-6">
+                <div class="bg-white rounded-lg p-6 text-black">
                     <h3 class="text-2xl font-bold mb-2">Move in/Move out</h3>
                     <p class="text-gray-700">Preparation and cleaning services for moving.</p>
                 </div>
-                <div class="bg-gray-200 rounded-lg p-6">
+                <div class="bg-white rounded-lg p-6 text-black">
                     <h3 class="text-2xl font-bold mb-2">Garden Trim & Tidy</h3>
                     <p class="text-gray-700">Maintaining and beautifying your outdoor spaces.</p>
                 </div>
-                <div class="bg-gray-200 rounded-lg p-6">
+                <div class="bg-white rounded-lg p-6 text-black">
                     <h3 class="text-2xl font-bold mb-2">Other Housework</h3>
                     <p class="text-gray-700">Assisting with various household tasks.</p>
                 </div>
-                <div class="bg-gray-200 rounded-lg p-6">
+                <div class="bg-white rounded-lg p-6 text-black">
                     <h3 class="text-2xl font-bold mb-2">Errands, Groceries & Admin</h3>
                     <p class="text-gray-700">Running errands, collecting post, or grocery shopping.</p>
                 </div>
@@ -74,7 +80,7 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-16 bg-blue-800 text-white">
+    <section id="about" class="py-16 bg-blue-900">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-8 text-center">About Us</h2>
             <p class="text-lg mb-8 text-center">Need help deciding what to keep or throw away? Boxing or bagging for storage. Running errands, collecting post or groceries? We can do it for you.</p>
@@ -83,13 +89,13 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-white">
+    <section id="contact" class="py-16 bg-blue-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
             <p class="text-lg mb-8 text-center">Feel free to contact us for any inquiries or to book a service.</p>
             <div class="text-center">
-                <a href="mailto:info@keepitcleansydney.com" class="bg-blue-800 text-white px-6 py-3 rounded-full hover:bg-blue-900 transition duration-300">Email Us</a>
-                <a href="tel:+61123456789" class="bg-blue-800 text-white px-6 py-3 rounded-full hover:bg-blue-900 transition duration-300 ml-4">Call Us</a>
+                <a href="mailto:info@keepitcleansydney.com" class="bg-white text-blue-800 px-6 py-3 rounded-full hover:bg-blue-100 transition duration-300">Email Us</a>
+                <a href="tel:+61477840430" class="bg-white text-blue-800 px-6 py-3 rounded-full hover:bg-blue-100 transition duration-300 ml-4">Call Us</a>
             </div>
         </div>
     </section>
@@ -97,8 +103,9 @@
     <!-- Footer -->
     <footer class="bg-blue-900 text-white py-4 text-center">
         <div class="container mx-auto px-4">
-            <p>&copy; 2023 Keep it Clean - Sydney. All rights reserved.</p>
+            <p>&copy; 2024 Keep it Clean - Sydney. All rights reserved.</p>
         </div>
     </footer>
 </body>
 </html>
+		
