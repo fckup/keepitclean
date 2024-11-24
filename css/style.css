@@ -1,9 +1,14 @@
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #2c3e50;
-    --accent-color: #3498db;
-    --background-color: #f5f6fa;
-    --text-color: #2c3e50;
+    --primary-color: #050b1f;
+    --secondary-color: #d4c8be;
+    --accent-color: #64ffda;
+    --dark-bg: #030813;
+    --card-bg: #d4c8be;
+    --text-color: #e6e6e6;
+    --text-dark: #1a1a1a;
+    --text-muted: #a39b94;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
 }
 
 * {
@@ -13,153 +18,254 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background-color: var(--dark-bg);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.logo {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    background: rgba(212, 200, 190, 0.95);
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 60px 0;
+.logo:hover {
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(rgba(3, 8, 19, 0.5), rgba(3, 8, 19, 0.7)),
+                url('../images/sydney-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
 }
 
-.tagline {
-    font-size: 1.2em;
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.5rem;
     opacity: 0.9;
 }
 
-section {
-    padding: 80px 0;
+.hero-contact {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    background: rgba(3, 8, 19, 0.8);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: inline-block;
 }
 
-h2 {
+.hero-contact p {
+    margin: 0.5rem 0;
+}
+
+.hero-contact .phone {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.services {
+    padding: 100px 5%;
+    background: var(--primary-color);
+}
+
+.services h2 {
     text-align: center;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
     color: var(--secondary-color);
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .service-card {
-    background: white;
+    background: var(--card-bg);
     padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-}
-
-.service-card i {
-    font-size: 2.5em;
-    color: var(--primary-color);
-    margin-bottom: 20px;
+    transform: translateY(-10px);
 }
 
 .service-card h3 {
-    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.service-card p {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.service-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.eco-note {
+    color: var(--accent-color) !important;
+    font-size: 0.9rem !important;
+    margin-top: 1rem !important;
+    padding: 8px;
+    border-radius: 6px;
+    background: rgba(100, 255, 218, 0.1);
+    display: inline-block;
+}
+
+.service-card .eco-note {
+    color: var(--primary-color) !important;
+    background: rgba(5, 11, 31, 0.1);
+}
+
+.contact {
+    padding: 100px 5%;
+    background: var(--primary-color);
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
     color: var(--secondary-color);
 }
 
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.service-item {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
+.contact-info {
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
 }
 
-.service-item i {
-    font-size: 2em;
-    color: var(--primary-color);
-    margin-bottom: 15px;
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
-#contact {
-    background-color: white;
+.contact-info p {
+    font-size: 1.2rem;
+    margin: 0.7rem 0;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-input, select, textarea {
+input, textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 15px;
+    border: 2px solid transparent;
+    background: white;
+    color: var(--text-dark);
+    border-radius: 8px;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.2);
 }
 
 textarea {
-    height: 150px;
+    min-height: 150px;
     resize: vertical;
 }
 
 button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 15px 30px;
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-color);
+    color: var(--text-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: var(--accent-color);
+    background: var(--accent-color);
+    color: var(--primary-color);
 }
 
 footer {
-    background-color: var(--secondary-color);
-    color: white;
+    background: var(--dark-bg);
+    color: var(--text-muted);
     text-align: center;
-    padding: 20px 0;
+    padding: 30px;
 }
 
 @media (max-width: 768px) {
-    header {
-        padding: 40px 0;
+    .hero h1 {
+        font-size: 3rem;
     }
-
-    header h1 {
-        font-size: 2em;
+    
+    .hero p {
+        font-size: 1.2rem;
     }
-
-    section {
-        padding: 40px 0;
-    }
-
+    
     .services-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .contact-form {
+        padding: 20px;
     }
 }

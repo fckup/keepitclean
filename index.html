@@ -3,116 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEEP IT CLEAN - Professional Home Care Services</title>
+    <title>Keep It Clean Sydney - Premium Cleaning Services</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div class="hero">
+        <div class="hero-content">
             <h1>KEEP IT CLEAN</h1>
-            <p class="tagline">Professional Home Care & Cleaning Services</p>
+            <p>Sydney's Premium Residential Cleaning Service</p>
+            <div class="hero-contact">
+                <p class="phone">Call Cat: 0477 840 430</p>
+                <p class="email">info@keepitclean.sydney</p>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-broom"></i>
-                    <h3>Maintenance Clean</h3>
-                    <p>Regular cleaning to keep your space fresh and tidy</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-spray-can"></i>
-                    <h3>Deep Clean</h3>
-                    <p>Thorough cleaning for those areas that need extra attention</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-home"></i>
-                    <h3>One-off Overhaul</h3>
-                    <p>Complete cleaning transformation for your space</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-box"></i>
-                    <h3>Declutter & Tidy</h3>
-                    <p>Help organizing and decluttering your space</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-truck"></i>
-                    <h3>Move in/Move out</h3>
-                    <p>Cleaning services for your moving needs</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Garden Trim & Tidy</h3>
-                    <p>Basic garden maintenance and cleanup</p>
-                </div>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images/residential.jpg" alt="Residential Cleaning">
+                <h3>Residential Clean</h3>
+                <p>Professional home cleaning service with meticulous attention to detail. We treat your home with the care it deserves.</p>
+                <p class="eco-note">✨ Pet-friendly, eco-conscious cleaning products</p>
+            </div>
+            <div class="service-card">
+                <img src="images/deep-clean.jpg" alt="Deep Cleaning">
+                <h3>Deep Clean</h3>
+                <p>Thorough deep cleaning that reaches every corner. Perfect for seasonal cleaning or special occasions.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/move.jpg" alt="Move In/Out">
+                <h3>Move In/Out Clean</h3>
+                <p>Comprehensive cleaning service for property transitions. Leave your old place spotless or start fresh in your new home.</p>
             </div>
         </div>
     </section>
 
-    <section id="additional-services">
-        <div class="container">
-            <h2>Additional Services</h2>
-            <div class="services-list">
-                <div class="service-item">
-                    <i class="fas fa-tasks"></i>
-                    <h3>Other Housework</h3>
-                    <p>Flexible assistance for various household tasks</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h3>Errands & Admin</h3>
-                    <p>From grocery shopping to collecting mail - we've got you covered</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-hand-holding-heart"></i>
-                    <h3>Personal Assistance</h3>
-                    <p>Help with decluttering decisions, storage organization, and other tasks you'd rather not handle</p>
-                </div>
-            </div>
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <h3>Direct Contact</h3>
+            <p>Call or text Cat: 0477 840 430</p>
+            <p>Email: info@keepitclean.sydney</p>
+            <p>Based in Sydney's Eastern Suburbs, happy to discuss other areas</p>
+            <p>Available Monday to Friday, 7am - 5pm</p>
+            <p class="eco-note">Using pet-safe, environmentally conscious cleaning products</p>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <form id="contact-form">
+        <div class="contact-form">
+            <form id="contact-form" method="POST">
                 <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="text" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
                 </div>
                 <div class="form-group">
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
                 </div>
                 <div class="form-group">
-                    <select id="service" name="service" required>
-                        <option value="">Select a Service</option>
-                        <option value="maintenance">Maintenance Clean</option>
-                        <option value="deep">Deep Clean</option>
-                        <option value="overhaul">One-off Overhaul</option>
-                        <option value="declutter">Declutter & Tidy</option>
-                        <option value="moving">Move in/Move out</option>
-                        <option value="garden">Garden Trim & Tidy</option>
-                        <option value="other">Other Services</option>
-                    </select>
+                    <textarea name="message" placeholder="Tell us about your cleaning needs" rows="5" required></textarea>
                 </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Tell us about your needs" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
+                <button type="submit">Request a Quote</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 KEEP IT CLEAN. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Keep It Clean Sydney. All rights reserved.</p>
     </footer>
 </body>
 </html>
